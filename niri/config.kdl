@@ -1,0 +1,8 @@
+include "~/.config/niri/noctalia.kdl"
+include "~/.config/niri/binds.kdl"
+include "~/.config/niri/input.kdl"
+include "~/.config/niri/layout.kdl"
+include "~/.config/niri/misc.kdl"
+include "~/.config/niri/rules.kdl"
+include "~/.config/niri/monitor.kdl"
+

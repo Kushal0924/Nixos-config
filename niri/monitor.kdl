@@ -1,0 +1,4 @@
+output "eDP-1" {
+    mode "1920x1080@60" // Set resolution and refresh rate
+    scale 1.33 // No scaling (use 2 for HiDPI)
+}
