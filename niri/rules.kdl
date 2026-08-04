@@ -14,6 +14,17 @@ window-rule {
   default-window-height { fixed 400; }
 }
 
+// Enforce transparency and background blur globally across all windows
+window-rule {
+    opacity 0.9                      // Global transparency value (0.0 to 1.0)
+    draw-border-with-background false // Prevents the window tinting issue
+    background-effect {
+        blur true                     // Enables background blur globally
+        noise 0.03                    // Prevents color banding on the blurred background
+        saturation 1.1                // Slightly enhances background vibrance
+    }
+}
+
 
 layer-rule {
   match namespace="^noctalia-backdrop"

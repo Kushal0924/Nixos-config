@@ -1,6 +1,6 @@
 binds {
     Mod+Q { close-window; }
-    Mod+Return { spawn "alacritty"; }
+    Mod+Return { spawn "kitty"; }
     Mod+B { spawn "chromium"; }
     Mod+E { spawn-sh "nautilus --new-window"; }
     Mod+G { spawn "lutris"; }

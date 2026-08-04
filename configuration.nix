@@ -94,7 +94,8 @@
     pavucontrol
     neovim
     wget
-    alacritty
+    kitty
+    lazygit
     git
     adw-gtk3
     adwaita-icon-theme
