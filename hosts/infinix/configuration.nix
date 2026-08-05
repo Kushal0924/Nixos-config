@@ -100,7 +100,6 @@
     adw-gtk3
     adwaita-icon-theme
     nwg-look
-    papirus-icon-theme
     bibata-cursors
     chromium
     onlyoffice-desktopeditors
