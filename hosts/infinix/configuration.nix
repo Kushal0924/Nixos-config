@@ -3,8 +3,8 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./modules/vm.nix
-    ./modules/files.nix
+    ../../modules/vm.nix
+    ../../modules/files.nix
   ];
 
   boot.loader = {

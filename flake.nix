@@ -34,7 +34,7 @@
       };
 
       modules = [
-        ./configuration.nix
+        ./hosts/infinix/configuration.nix #nixos-btw
 	inputs.noctalia-greeter.nixosModules.default
 	home-manager.nixosModules.home-manager 
 	  {
