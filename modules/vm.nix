@@ -10,7 +10,8 @@
     libvirtd = {
       enable = true;
       qemu = {
-        swtpm.enable = true; # Required for Windows 11 TPM
+        package = pkgs.qemu_kvm; 
+        swtpm.enable = true;     # Required for Windows 11 TPM
       };
     };
     spiceUSBRedirection.enable = true;

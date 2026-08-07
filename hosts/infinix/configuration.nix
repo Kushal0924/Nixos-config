@@ -76,7 +76,7 @@
   users.users.mordred = {
     isNormalUser = true;
     shell = pkgs.fish;
-    extraGroups = [ "wheel" "networkmanager" "libvirtd" ];
+    extraGroups = [ "wheel" "networkmanager" "libvirtd" "kvm" ];
     packages = with pkgs; [
       tree
     ];
