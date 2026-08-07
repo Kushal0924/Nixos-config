@@ -13,11 +13,11 @@ layout {
 
     border { off; }
 
-    default-column-width { proportion 0.900000; }
+    default-column-width { proportion 0.95; }
 
     preset-column-widths {
         proportion 0.333330
-        proportion 0.900000
+        proportion 0.95
         proportion 0.666670
     }
 

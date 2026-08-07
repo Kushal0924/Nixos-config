@@ -82,6 +82,10 @@
     ];
   };
 
+  # Disable Power-button for keybinds
+  services.logind.powerKey = "ignore";
+
+  # Enable Nix-Commands and Flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   hardware.enableRedistributableFirmware = true; 
@@ -106,7 +110,8 @@
     krita
     wineWow64Packages.staging
     winetricks
-    lutris 
+    lutris
+    bottles
     material-design-icons
     vesktop
     xwayland-satellite
