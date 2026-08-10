@@ -1,6 +1,6 @@
 window-rule {
   // Rounded corners for a modern look.
-  geometry-corner-radius 20
+  geometry-corner-radius 0
 
   // Clips window contents to the rounded corner boundaries.
   clip-to-geometry true
@@ -15,7 +15,7 @@ window-rule {
 }
 
 // Enforce transparency and background blur globally across all windows
-window-rule {
+/*window-rule {
     opacity 0.9                      // Global transparency value (0.0 to 1.0)
     draw-border-with-background false // Prevents the window tinting issue
     background-effect {
@@ -23,7 +23,7 @@ window-rule {
         noise 0.03                    // Prevents color banding on the blurred background
         saturation 1.1                // Slightly enhances background vibrance
     }
-}
+}*/
 
 
 layer-rule {
