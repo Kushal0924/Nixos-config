@@ -7,6 +7,8 @@
 
     home-manager.url = "github:nix-community/home-manager";
 
+    lazyvim.url = "github:pfassina/lazyvim-nix";
+
     niri = {
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -24,7 +26,7 @@
 
   };
 
-  outputs = inputs@{ self, nixpkgs, home-manager, ... }: {
+  outputs = inputs@{ self, nixpkgs, home-manager, lazyvim, ... }: {
     nixosConfigurations = {
 
       infinix = nixpkgs.lib.nixosSystem {  

@@ -75,7 +75,7 @@
 
   users.users.mordred = {
     isNormalUser = true;
-    shell = pkgs.fish;
+    shell = pkgs.zsh;
     extraGroups = [ "wheel" "networkmanager" "libvirtd" "kvm" ];
     packages = with pkgs; [
       tree
@@ -106,7 +106,7 @@
     nwg-look
     bibata-cursors
     chromium
-    onlyoffice-desktopeditors
+    libreoffice
     krita
     wineWow64Packages.staging
     winetricks

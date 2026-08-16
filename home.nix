@@ -9,13 +9,16 @@
   imports = [
     inputs.noctalia.homeModules.default
     inputs.niri.homeModules.niri
+    ./modules/lazyvim.nix
   ];
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
     btop
     grc
-    ani-cli
+    fnm
+    pokeget-rs
+    oh-my-zsh
   ];
 
 
@@ -65,6 +68,7 @@
     enable = true;
     interactiveShellInit = ''
       set fish_greeting # Disable greeting
+      fnm env --use-on-cd | source
     '';
     plugins = [
       { 
@@ -72,6 +76,16 @@
         src = pkgs.fishPlugins.grc.src; 
       }
     ];
+  };
+
+
+  programs.zsh = {
+    enable = true;
+    ohMyZsh = {
+      enable = true;
+      plugins = [ "git" "zsh-autosuggestions" "zsh-autocomplete" "direnv" ];
+      theme = "robbyrussell";
+    };
   };
 
 
