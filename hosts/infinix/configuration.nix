@@ -75,7 +75,7 @@
 
   users.users.mordred = {
     isNormalUser = true;
-    shell = pkgs.zsh;
+    shell = pkgs.fish;
     extraGroups = [ "wheel" "networkmanager" "libvirtd" "kvm" ];
     packages = with pkgs; [
       tree
@@ -83,7 +83,7 @@
   };
 
   # Disable Power-button for keybinds
-  services.logind.powerKey = "ignore";
+  services.logind.settings.Login.HandlePowerKey = "ignore";
 
   # Enable Nix-Commands and Flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

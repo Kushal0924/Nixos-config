@@ -79,16 +79,6 @@
   };
 
 
-  programs.zsh = {
-    enable = true;
-    ohMyZsh = {
-      enable = true;
-      plugins = [ "git" "zsh-autosuggestions" "zsh-autocomplete" "direnv" ];
-      theme = "robbyrussell";
-    };
-  };
-
-
   dconf.settings = {
     "org/gnome/desktop/wm/preferences" = {
       button-layout = ":";
