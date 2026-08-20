@@ -68,6 +68,20 @@
     pulse.enable = true;
   };
 
+
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true; # Critical for OpenGL / glXChooseVisual
+  };
+
+# Enable Steam properly through the NixOS module (handles dependencies & firewall)
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true; # Open ports for Steam Remote Play
+    dedicatedServer.openFirewall = true; # Open ports for Source Dedicated Server
+  };
+
+
   # Enable touchpad support (enabled default in most desktopManager).
   services.libinput.enable = true;
 
@@ -90,6 +104,12 @@
 
   hardware.enableRedistributableFirmware = true; 
 
+  programs.direnv = {
+    enable = true;
+    loadInNixShell = true;
+    nix-direnv.enable = true;
+  };
+
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
   environment.systemPackages = with pkgs; [
@@ -110,6 +130,7 @@
     krita
     wineWow64Packages.staging
     winetricks
+    umu-launcher
     lutris
     bottles
     material-design-icons
@@ -118,6 +139,7 @@
     glib
     gsettings-desktop-schemas
     nodejs
+    devenv
   ];
 
 
