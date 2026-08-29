@@ -11,6 +11,7 @@ input {
         track-layout "global"
     }
     touchpad {
+        dwt
         tap
         natural-scroll
     }

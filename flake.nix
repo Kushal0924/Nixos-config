@@ -36,15 +36,15 @@
         };
         modules = [
           ./hosts/infinix/configuration.nix
-	  inputs.noctalia-greeter.nixosModules.default
-	  home-manager.nixosModules.home-manager 
-	    {
+	        inputs.noctalia-greeter.nixosModules.default
+	        home-manager.nixosModules.home-manager 
+          {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
               home-manager.extraSpecialArgs = { inherit inputs; };
-	      home-manager.backupFileExtension = "backup";
+	            home-manager.backupFileExtension = "backup";
               home-manager.users.mordred = ./home.nix; 
-            }
+          }
         ];
       };
 
